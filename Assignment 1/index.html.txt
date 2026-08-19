@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================
+         META INFORMATION
+    ========================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NovaBank Customer Banking Portal"
+    >
+
+    <title>NovaBank | Customer Dashboard</title>
+
+
+    <!-- =========================
+         CSS
+    ========================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         APPLICATION CONTAINER
+    ========================== -->
+
+    <div class="app">
+
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside
+            class="sidebar"
+            id="sidebar"
+        >
+
+            <!-- Logo -->
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    N
+                </div>
+
+                <span>
+                    NovaBank
+                </span>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="navigation">
+
+                <button
+                    class="nav-item active"
+                    data-section="dashboard"
+                >
+                    <span>🏠</span>
+                    Dashboard
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-section="accounts"
+                >
+                    <span>💳</span>
+                    Accounts
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-section="transfer"
+                >
+                    <span>💸</span>
+                    Transfer Money
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-section="bills"
+                >
+                    <span>🧾</span>
+                    Pay Bills
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-section="cards"
+                >
+                    <span>💳</span>
+                    My Cards
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-section="support"
+                >
+                    <span>💬</span>
+                    Support
+                </button>
+
+            </nav>
+
+
+            <!-- Sidebar Bottom -->
+
+            <div class="sidebar-footer">
+
+                <button
+                    class="logout-button"
+                    id="logoutButton"
+                >
+                    ↪ Sign Out
+                </button>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main class="main-content">
+
+
+            <!-- =========================
+                 HEADER
+            ========================== -->
+
+            <header class="header">
+
+                <!-- Mobile Menu -->
+
+                <button
+                    class="mobile-menu"
+                    id="mobileMenu"
+                >
+                    ☰
+                </button>
+
+
+                <!-- Page Title -->
+
+                <div class="header-title">
+
+                    <h2>
+                        Customer Portal
+                    </h2>
+
+                </div>
+
+
+                <!-- Header Actions -->
+
+                <div class="header-actions">
+
+
+                    <!-- Dark Mode -->
+
+                    <button
+                        class="header-button"
+                        id="darkModeButton"
+                        title="Toggle dark mode"
+                    >
+                        🌙
+                    </button>
+
+
+                    <!-- Notifications -->
+
+                    <button
+                        class="header-button notification-button"
+                        id="notificationButton"
+                        title="Notifications"
+                    >
+
+                        🔔
+
+                        <span
+                            class="notification-dot"
+                        ></span>
+
+                    </button>
+
+
+                    <!-- Profile -->
+
+                    <div class="profile">
+
+                        <div class="profile-avatar">
+                            AS
+                        </div>
+
+                        <span class="profile-name">
+                            Alex Smith
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =========================
+                 PAGE CONTENT
+            ========================== -->
+
+            <section class="content">
+
+
+                <!-- =========================
+                     WELCOME SECTION
+                ========================== -->
+
+                <section class="welcome-section">
+
+                    <div>
+
+                        <h1>
+                            Good morning, Alex 👋
+                        </h1>
+
+                        <p>
+                            Here's what's happening
+                            with your finances today.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="primary-button"
+                        id="transferButton"
+                    >
+                        + New Transfer
+                    </button>
+
+                </section>
+
+
+
+                <!-- =========================
+                     ACCOUNT SUMMARY
+                ========================== -->
+
+                <section class="account-cards">
+
+
+                    <!-- Checking -->
+
+                    <article class="account-card">
+
+                        <div class="account-header">
+
+                            <span>
+                                Checking Account
+                            </span>
+
+                            <span>
+                                •••• 4821
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            $8,450.75
+                        </h2>
+
+
+                        <p class="positive">
+                            ↑ 4.2% this month
+                        </p>
+
+
+                        <small>
+                            Available balance
+                        </small>
+
+                    </article>
+
+
+
+                    <!-- Savings -->
+
+                    <article class="account-card">
+
+                        <div class="account-header">
+
+                            <span>
+                                Savings Account
+                            </span>
+
+                            <span>
+                                •••• 9182
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            $24,780.20
+                        </h2>
+
+
+                        <p class="positive">
+                            ↑ 8.1% this month
+                        </p>
+
+
+                        <small>
+                            Available balance
+                        </small>
+
+                    </article>
+
+
+
+                    <!-- Credit Card -->
+
+                    <article class="account-card">
+
+                        <div class="account-header">
+
+                            <span>
+                                Credit Card
+                            </span>
+
+                            <span>
+                                •••• 2209
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            $1,245.30
+                        </h2>
+
+
+                        <p class="negative">
+                            $3,754.70 remaining
+                        </p>
+
+
+                        <small>
+                            Credit used: 24.9%
+                        </small>
+
+                    </article>
+
+                </section>
+
+
+
+                <!-- =========================
+                     DASHBOARD GRID
+                ========================== -->
+
+                <section class="dashboard-grid">
+
+
+                    <!-- =========================
+                         TRANSACTIONS
+                    ========================== -->
+
+                    <article class="panel">
+
+                        <div class="panel-header">
+
+                            <h2>
+                                Recent Transactions
+                            </h2>
+
+
+                            <select
+                                id="transactionFilter"
+                            >
+
+                                <option value="all">
+                                    All Transactions
+                                </option>
+
+                                <option value="income">
+                                    Income
+                                </option>
+
+                                <option value="expense">
+                                    Expenses
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="table-container">
+
+                            <table class="transactions-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>
+                                            Transaction
+                                        </th>
+
+                                        <th>
+                                            Date
+                                        </th>
+
+                                        <th>
+                                            Status
+                                        </th>
+
+                                        <th>
+                                            Amount
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody id="transactionList">
+
+
+                                    <tr data-type="expense">
+
+                                        <td>
+
+                                            <div class="transaction">
+
+                                                <div class="transaction-icon">
+                                                    🛒
+                                                </div>
+
+                                                <div>
+
+                                                    <strong>
+                                                        Fresh Market
+                                                    </strong>
+
+                                                    <small>
+                                                        Groceries
+                                                    </small>
+
+                                                </div>
+
+                                            </div>
+
+                                        </td>
+
+                                        <td>
+                                            Aug 18
+                                        </td>
+
+                                        <td>
+                                            Completed
+                                        </td>
+
+                                        <td class="expense">
+                                            -$84.32
+                                        </td>
+
+                                    </tr>
+
+
+
+                                    <tr data-type="income">
+
+                                        <td>
+
+                                            <div class="transaction">
+
+                                                <div class="transaction-icon">
+                                                    💼
+                                                </div>
+
+                                                <div>
+
+                                                    <strong>
+                                                        Salary
+                                                    </strong>
+
+                                                    <small>
+                                                        Payroll
+                                                    </small>
+
+                                                </div>
+
+                                            </div>
+
+                                        </td>
+
+                                        <td>
+                                            Aug 17
+                                        </td>
+
+                                        <td>
+                                            Completed
+                                        </td>
+
+                                        <td class="income">
+                                            +$3,850.00
+                                        </td>
+
+                                    </tr>
+
+
+
+                                    <tr data-type="expense">
+
+                                        <td>
+
+                                            <div class="transaction">
+
+                                                <div class="transaction-icon">
+                                                    ⚡
+                                                </div>
+
+                                                <div>
+
+                                                    <strong>
+                                                        Electric Company
+                                                    </strong>
+
+                                                    <small>
+                                                        Utility Bill
+                                                    </small>
+
+                                                </div>
+
+                                            </div>
+
+                                        </td>
+
+                                        <td>
+                                            Aug 15
+                                        </td>
+
+                                        <td>
+                                            Completed
+                                        </td>
+
+                                        <td class="expense">
+                                            -$142.50
+                                        </td>
+
+                                    </tr>
+
+
+
+                                    <tr data-type="expense">
+
+                                        <td>
+
+                                            <div class="transaction">
+
+                                                <div class="transaction-icon">
+                                                    ☕
+                                                </div>
+
+                                                <div>
+
+                                                    <strong>
+                                                        Downtown Coffee
+                                                    </strong>
+
+                                                    <small>
+                                                        Food & Dining
+                                                    </small>
+
+                                                </div>
+
+                                            </div>
+
+                                        </td>
+
+                                        <td>
+                                            Aug 14
+                                        </td>
+
+                                        <td>
+                                            Completed
+                                        </td>
+
+                                        <td class="expense">
+                                            -$7.85
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =========================
+                         RIGHT COLUMN
+                    ========================== -->
+
+                    <div class="right-column">
+
+
+                        <!-- Quick Actions -->
+
+                        <article class="panel">
+
+                            <div class="panel-header">
+
+                                <h2>
+                                    Quick Actions
+                                </h2>
+
+                            </div>
+
+
+                            <div class="quick-actions">
+
+                                <button
+                                    class="action-button"
+                                    id="quickTransfer"
+                                >
+
+                                    <span>
+                                        💸
+                                    </span>
+
+                                    Transfer
+
+                                </button>
+
+
+                                <button
+                                    class="action-button"
+                                    id="quickBill"
+                                >
+
+                                    <span>
+                                        🧾
+                                    </span>
+
+                                    Pay Bill
+
+                                </button>
+
+
+                                <button
+                                    class="action-button"
+                                    id="lockCard"
+                                >
+
+                                    <span>
+                                        🔒
+                                    </span>
+
+                                    Lock Card
+
+                                </button>
+
+
+                                <button
+                                    class="action-button"
+                                    id="statementButton"
+                                >
+
+                                    <span>
+                                        📄
+                                    </span>
+
+                                    Statements
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- Spending -->
+
+                        <article class="panel spending-panel">
+
+                            <div class="panel-header">
+
+                                <h2>
+                                    Monthly Spending
+                                </h2>
+
+                                <strong>
+                                    $1,248
+                                </strong>
+
+                            </div>
+
+
+                            <div class="spending-content">
+
+
+                                <div class="spending-row">
+
+                                    <span>
+                                        Housing
+                                    </span>
+
+                                    <strong>
+                                        $650
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="progress">
+
+                                    <div
+                                        class="progress-bar"
+                                        style="width: 75%"
+                                    ></div>
+
+                                </div>
+
+
+
+                                <div class="spending-row">
+
+                                    <span>
+                                        Food
+                                    </span>
+
+                                    <strong>
+                                        $285
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="progress">
+
+                                    <div
+                                        class="progress-bar"
+                                        style="width: 45%"
+                                    ></div>
+
+                                </div>
+
+
+
+                                <div class="spending-row">
+
+                                    <span>
+                                        Entertainment
+                                    </span>
+
+                                    <strong>
+                                        $120
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="progress">
+
+                                    <div
+                                        class="progress-bar"
+                                        style="width: 25%"
+                                    ></div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =========================
+         TRANSFER MODAL
+    ========================== -->
+
+    <div
+        class="modal-overlay"
+        id="transferModal"
+    >
+
+        <div class="modal">
+
+            <div class="modal-header">
+
+                <h2>
+                    Transfer Money
+                </h2>
+
+                <button
+                    class="close-button"
+                    data-close-modal
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <form id="transferForm">
+
+
+                <div class="form-group">
+
+                    <label>
+                        From Account
+                    </label>
+
+                    <select id="fromAccount">
+
+                        <option>
+                            Checking •••• 4821
+                        </option>
+
+                        <option>
+                            Savings •••• 9182
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Recipient
+                    </label>
+
+                    <input
+                        type="text"
+                        id="recipient"
+                        placeholder="Recipient name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Amount
+                    </label>
+
+                    <input
+                        type="number"
+                        id="amount"
+                        min="0.01"
+                        step="0.01"
+                        placeholder="0.00"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Transfer Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="transferDate"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="modal-actions">
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        data-close-modal
+                    >
+                        Cancel
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Continue
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         BILL PAYMENT MODAL
+    ========================== -->
+
+    <div
+        class="modal-overlay"
+        id="billModal"
+    >
+
+        <div class="modal">
+
+            <div class="modal-header">
+
+                <h2>
+                    Pay a Bill
+                </h2>
+
+                <button
+                    class="close-button"
+                    data-close-modal
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <form id="billForm">
+
+
+                <div class="form-group">
+
+                    <label>
+                        Bill Provider
+                    </label>
+
+                    <select id="provider">
+
+                        <option>
+                            Electric Company
+                        </option>
+
+                        <option>
+                            Internet Provider
+                        </option>
+
+                        <option>
+                            Water Utility
+                        </option>
+
+                        <option>
+                            Mobile Provider
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Account Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="billAccount"
+                        placeholder="Account number"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Amount
+                    </label>
+
+                    <input
+                        type="number"
+                        id="billAmount"
+                        min="0.01"
+                        step="0.01"
+                        placeholder="0.00"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="modal-actions">
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        data-close-modal
+                    >
+                        Cancel
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Continue
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
