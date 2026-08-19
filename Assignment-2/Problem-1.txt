@@ -1,0 +1,51 @@
+Problem 1: Tree of Trusted Servers
+
+
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int n = Integer.parseInt(st.nextToken());
+        long k = Long.parseLong(st.nextToken());
+
+        long[] a = new long[n + 1];
+        st = new StringTokenizer(br.readLine());
+        for (int i = 1; i <= n; i++)
+            a[i] = Long.parseLong(st.nextToken());
+
+        ArrayList<Integer>[] g = new ArrayList[n + 1];
+        for (int i = 1; i <= n; i++) g[i] = new ArrayList<>();
+
+        for (int i = 0; i < n - 1; i++) {
+            st = new StringTokenizer(br.readLine());
+            int u = Integer.parseInt(st.nextToken());
+            int v = Integer.parseInt(st.nextToken());
+            g[u].add(v);
+            g[v].add(u);
+        }
+
+        int count = 0;
+        Stack<long[]> stack = new Stack<>();
+        stack.push(new long[]{1, 0, a[1]});
+
+        while (!stack.isEmpty()) {
+            long[] cur = stack.pop();
+            int u = (int) cur[0];
+            int parent = (int) cur[1];
+            long x = cur[2];
+
+            if (x >= k) count++;
+
+            for (int v : g[u]) {
+                if (v != parent)
+                    stack.push(new long[]{v, u, x ^ a[v]});
+            }
+        }
+
+        System.out.println(count);
+    }
+}
